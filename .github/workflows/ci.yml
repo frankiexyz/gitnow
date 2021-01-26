@@ -29,4 +29,4 @@ jobs:
           options: -v ${{ github.workspace }}:/gitnow
           shell: fish
           run: |
-            apk add curl && curl -sL git.io/fisher | source && fish -v && fisher --version && fisher install /gitnow && source ~/.config/fish/config.fish && gitnow -v
+            apk add curl && curl -sL git.io/fisher | source && fish -v && fisher --version && fisher install /gitnow && fish -c 'gitnow -v'
